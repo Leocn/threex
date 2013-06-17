@@ -94,7 +94,7 @@
 	scene.add( mesh )
 	mesh.userData.domClasses	+= ' godRays'
 	updateFcts.push(function(delta, now){
-		mesh.position.x	= Math.cos(0.2*now * Math.PI*2)*2.5
+		mesh.position.x	= Math.cos(0.2 *now * Math.PI*2)*2.5
 		mesh.position.z	= Math.sin(0.1 *now * Math.PI*2)*1
 	})
 
@@ -106,7 +106,7 @@
 	//////////////////////////////////////////////////////////////////////////////////
 
 	var materialOn	= new THREE.MeshBasicMaterial()
-	materialOn.color.set(0x88ccff)
+	materialOn.color.set(0x88ccff) 
 	var materialOff	= new THREE.MeshBasicMaterial()
 	materialOff.color.set('black')
 	var godRays	= new THREEx.GodRays(renderer, camera);
